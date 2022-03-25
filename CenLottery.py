@@ -3,7 +3,7 @@ import smartpy as sp
 # Max 10
 class SimpleLottery(sp.Contract):
     def __init__(self):
-        self.init(limit = 5, ticketToAddress = sp.map(tkey = sp.TNat, tvalue = sp.TAddress), id = 0, previousWinners = sp.list(t = sp.TAddress))
+        self.init(limit = 14, ticketToAddress = sp.map(tkey = sp.TNat, tvalue = sp.TAddress), id = 0, previousWinners = sp.list(t = sp.TAddress))
     
     @sp.entry_point
     def buyTicket(self, qty):
